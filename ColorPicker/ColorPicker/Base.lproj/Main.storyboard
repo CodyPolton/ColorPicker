@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzz-K7-Mhj">
+                                <rect key="frame" x="0.0" y="680" width="414" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="If1-Pe-iaN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qya-jv-gK4"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfo-de-leR">
+                                <rect key="frame" x="186" y="619" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Fzz-K7-Mhj" firstAttribute="top" secondItem="zfo-de-leR" secondAttribute="bottom" constant="40" id="CgS-fo-Hdx"/>
+                            <constraint firstItem="Fzz-K7-Mhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HQl-m6-px0"/>
+                            <constraint firstItem="zfo-de-leR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Htm-lY-Nqo"/>
+                            <constraint firstItem="Fzz-K7-Mhj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gbp-9e-f8j"/>
+                            <constraint firstAttribute="bottom" secondItem="Fzz-K7-Mhj" secondAttribute="bottom" id="tWU-r8-hfO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="Fzz-K7-Mhj" id="3VL-Kg-RUP"/>
+                        <outlet property="textField" destination="zfo-de-leR" id="7Hm-yy-239"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
